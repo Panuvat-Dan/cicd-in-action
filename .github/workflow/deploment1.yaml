@@ -15,5 +15,9 @@ jobs:
           pip install --upgrade pip
      - name: Install Precommit
         run: pip install pre-commit
+     - name: Install Pandas
+        run: pip install pandas
+     - name: Install Pytest
+        run: pip install pytest
      - name: Run Linting
         run: pre-commit run --all-files
